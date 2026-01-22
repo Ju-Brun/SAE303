@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Comic Neue", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #000000;
+}
+
+
+
+/* Conteneur global pour aligner header&page */
+.wrapper {
+  margin: 0 auto;
+    background: #f45ab0;
+}
+
+
+
+/* Barre du haut */
+header {
+    position: sticky;
+    top: 0;
+    height: 60px;
+    background: #f7f1a5;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 10;
+    border-bottom: 3px solid #008ad6;
+}
+.logo {
+    width: 40px;
+    height: 40px;
+    background: #ff6ab3;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+.nav-links {
+    display: flex;
+    gap: 30px;
+    font-weight: 700;
+    color: #0b7cc7;
+    font-size: 16px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/* Conteneur rose principal */
+.page {
+    background: #f45ab0;
+}
+
+section {
+    padding: 40px 25px;
+    color: #fff;
+}
+
+.separator {
+    height: 8px;
+    background: #00c2ff;
+    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+}
+
+/* Section qui sommes nous */
+.intro {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+.intro .photo {
+    width: 130px;
+    height: 130px;
+    border-radius: 12px;
+    border: 4px solid #00c2ff;
+    background-image: repeating-linear-gradient(
+        45deg,
+        #e1e1e1 0,
+        #e1e1e1 4px,
+        #fafafa 4px,
+        #fafafa 8px
+    );
+}
+h1, h2 {
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+}
+h1 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+h2 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.intro-text {
+    font-size: 12px;
+    line-height: 1.3;
+}
+
+
+
+/* Section notre sujet */
+.sujet-wrapper {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+.sujet-text {
+    font-size: 12px;
+    line-height: 1.3;
+    flex: 1;
+}
+.sujet-img {
+    width: 130px;
+    height: 180px;
+    border-radius: 0px;
+    overflow: hidden;/* coupe ce qui dépasse */
+}
+.sujet-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;/* remplissage comme dans ta maquette */
+    display: block;
+    }
+
+
+
+/* Section "Quelques chiffres" */
+.chiffres-intro {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.graphes-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+.graphes-col {
+    flex: 1;
+    text-align: center;
+}
+.graphes-col.left {
+    text-align: left;
+}
+
+.graphes-col.right {
+    text-align: right;
+}
+.graphes-col p {
+    margin-bottom: 6px;
+}
+
+
+
+/* Bandeau de contact en bas */
+.contact-band {
+    background: #f7f1a5;
+    text-align: center;
+    padding: 25px 15px;
+    color: #0b7cc7;
+    border-top: 3px solid #008ad6;
+}
+.contact-band h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.contact-band p {
+    font-size: 13px;
+    color: #008ad6;
+}
+
+
+
+/* Fond sous la page */
+.bottom-space {
+    height: 10px;
+    background: #000;
+}
+@media (min-width: 400px) {
+    .wrapper {
+        width: 400px;
+    }
+}
