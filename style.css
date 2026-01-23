@@ -72,30 +72,38 @@ body{
   padding-bottom: 5px;
   border-bottom: 2px solid transparent;
 }
-
 .nav-link:hover {
   color: #EC68B5;
   border-bottom: 2px solid #EC68B5;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.link {
+  color: #2185E2;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+}
+
+.link:hover {
+  color: #FFF4E0;
+  border-bottom: 2px solid #FFF4E0;
+}
+
+
+
+h1, h2, h3 {
   font-family: "Fira Sans", sans-serif;
   color: #FFF4E0;
   margin-top: 0;
 }
 
-footer {
-  background-color: #2185E2;
-  color: #FFF4E0;
-  padding: 40px 20px;
-  margin-top: auto;
-}
-
 section {
   padding: 40px 20px;
   max-width: 1200px;
-  margin: 12px auto;
-  border-bottom: 8px solid #2185E2;
+  margin: 32px auto;
   width: 200%;
   box-sizing: border-box;
 }
@@ -122,11 +130,28 @@ section {
 }
 
 .projet {
-  width: 300px;
+  width: 350px;
   height: auto;
   flex-shrink: 0;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.Graph1{
+    width: 100%;
+    background-color: #FFF4E0;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.Graph2{
+    width: 100%;
+    background-color: #FFF4E0;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .footer-container {
@@ -185,5 +210,10 @@ section {
   margin: 0;
 }
 
-
+footer {
+  background-color: #2185E2;
+  color: #FFF4E0;
+  padding: 40px 20px;
+  margin-top: auto;
+}
 

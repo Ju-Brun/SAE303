@@ -11,6 +11,8 @@
         href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script><!--le lien vers chart js-->
+
     <link rel="stylesheet" href="./style.css">
 
     <title>Document</title>
@@ -29,23 +31,39 @@
             </ul>
         </div>
     </nav>
-
+<br><br><br><br><br><br><br>
     <section id="home">
         <div class="home-content">
             <div class="home-text">
                 <h1>Qui sommes nous ?</h1>
                 <p>Nous sommes Stella, Quentin et Julian, trois étudiants de deuxième année en BUT MMI (Multimédia et
-                    Internet), présentant notre projet de datalogie pour SAE 3.03.</p>
+                    Internet). Ce site nous permet de présenter notre projet de datalogie pour SAE 3.03. Elle reprend le poster que nous avons réalisé. <br><br> Nous avons choisi, afin d'illustrer la couche d'ozone, un parapluie qui serait troué, et dont chaque représenterait le trou de la couche d'ozone au fil du temps. Notre choix s'est porté sur un parapluie car ce dernier, tout comme la couche d'ozone, sert à nous protéger de ce qui vient du ciel et se trouve au-dessus de nos têtes.
+</p>
             </div>
             <img src="img/Rasschaert-Moenner-Brun-2A1.png" alt="Projet" class="projet">
         </div>
     </section>
 
-    
+<br><br><br><br><br><br><br>
 
     <section id="about">
-        <h1>Quelques chiffres</h1>
+        <h1>Quelques chiffres</h1> <br><br>
+<h2>Évolution des substances qui réduisent la couche d'ozone dans le monde de 1988 à 2020</h2>
+        <div class="Graph1">
+            <canvas id="chart"></canvas>
+        </div>
+        <p>Ce graphique represente les principales substances qui réduisent la couche d'ozone dans le monde de 1988 à 2020. <br> Les émissions de chaque gaz sont exprimées en tonnes de potentiel d'appauvrissement de l'ozone (PAO), ce qui tient compte de
+la quantité de gaz émise et de sa « puissance » en termes d'appauvrissement de la couche d'ozone. <br><br> Les données proviennent du site <a href="https://ourworldindata.org/ozone-layer" class="link">ourworldindata</a></p>
+<br><br><br><br>
+
+        <h2>Évolution de la taille du trou dans la couche d'ozone au-dessus de l'Antarctique de 1979 à 2024</h2>
+        <div class="Graph2">
+            <canvas id="trou"></canvas>
+        </div>
+        <p>Ce graphique represente la taille du trou dans la couche d'ozone au-dessus de l'Antarctique. <br> Superficie moyenne du trou dans la couche d'ozone stratosphérique au cours du temps, exprimée en km². <br><br>Les données proviennent du site <a href="https://ourworldindata.org/ozone-layer" class="link">ourworldindata</a></p>
     </section>
+
+
 
     <footer id="contact">
         <div class="footer-container">
@@ -77,5 +95,6 @@
         </div>
     </footer>
 </body>
+<script src="./pointjs.js"></script>
 
 </html>
