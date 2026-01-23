@@ -10,8 +10,7 @@ let hydro=[23,    14336,   4637,   33002,  38261,  32107, 40900, 26399, 13087];
 let bro=[12,      128,     426,    37348,  27316,  12587, 4565,  323,   -15];
 let chlo=[5,      65667,   16754,  15456,  2120,   618,   -20,   -22,   -32];
 
-let annees=["1986", "1989", "1990", "1995", "2000", "20005", "2010", "2015", "2020"];
-
+let annees=["1986", "1989", "1990", "1995", "2000", "2005", "2010", "2015", "2020"];
 
 new Chart(truc, {
     type: 'line',
@@ -22,13 +21,13 @@ new Chart(truc, {
             data: chlo,
             fill : true,
             pointRadius : 1,
-            backgroundColor : "#7043058c",
+            backgroundColor : "#02ff788c",
         },{
             label: 'Methyl Bromide',
             data: bro,
             fill : true,
             pointRadius : 1,
-            backgroundColor : "#dda92592",
+            backgroundColor : "#ffb70092",
         },{
             label: 'Hydrochlorofluocarbons(HCFCs)',
             data: hydro,
@@ -40,21 +39,20 @@ new Chart(truc, {
             data: carbon,
             fill : true,
             pointRadius : 1,
-            backgroundColor : "#25bb2591",
+            backgroundColor : "#184c0b91",
         },{
             label: 'Halons',
             data: halo,
             fill : true,
             pointRadius : 1,
-            backgroundColor : "#aa202065",
+            backgroundColor : "#ff00008a",
         },{
             label : "Chlorofluorocarbons(CFCs)",
             data: cfc,
             fill : true,
             pointRadius : 1,
             backgroundColor : "#b759ff92",
-        }
-        ]
+        }]
     },
     options: {
         scales: {
@@ -64,56 +62,26 @@ new Chart(truc, {
 });
 
 
+let trou=document.getElementById('trou');
+let Annee=["1979", "1985", "1990", "1995", "2000", "2005", "2010", "2015", "2020", "2024"];
+let taille=[100000, 14200000, 19200000, 23000000, 24800000, 24400000, 19400000, 25600000, 23500000, 19600000];
 
-
-
-let ctx=document.getElementById('test');
-new Chart(ctx, {
+new Chart(trou, {
     type: 'line',
     data: {
-        labels: annees,
-        datasets: [{
-            label: 'Methyl Chloroform',
-            data: chlo,
-            fill : true,
-            pointRadius : 0,
-            backgroundColor : "#704305",
-        },{
-            label: 'Methyl Bromide',
-            data: bro,
-            fill : true,
-            pointRadius : 0,
-            backgroundColor : "#ddaa25",
-        },{
-            label: 'Hydrochlorofluocarbons(HCFCs)',
-            data: hydro,
-            fill : true,
-            pointRadius : 0,
-            backgroundColor : "#2525cd",
-        },{
-            label: 'Carbon Tetrachloride',
-            data: carbon,
-            fill : true,
-            pointRadius : 0,
-            backgroundColor : "#25bb25",
-        },{
-            label: 'Halons',
-            data: halo,
-            fill : true,
-            pointRadius : 0,
-            backgroundColor : "#aa2020",
-        },{
+        labels: Annee,
+        datasets: [{ 
             label : "Chlorofluorocarbons(CFCs)",
-            data: cfc,
-            fill : true,
+            data: taille,
+            fill : false,
             pointRadius : 0,
-            backgroundColor : "#b759ff",
+            borderColor : "#06e8a1",
         }
         ]
     },
     options: {
         scales: {
-            y: {min: -11000, max: 1100000, type: 'logarithmic'}
+            y: {min: 0, max: 30000000, type: 'linear'}
         }
     }
 });

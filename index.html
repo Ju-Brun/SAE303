@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script><!--le lien vers chart js-->
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <h2>SAE 3.03</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Nous découvrir</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">Notre Sujet</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Nous Contacter</a></li>
+            </ul>
+        </div>
+    </nav>
+<br><br><br><br><br><br><br>
+    <section id="home">
+        <div class="home-content">
+            <div class="home-text">
+                <h1>Qui sommes nous ?</h1>
+                <p>Nous sommes Stella, Quentin et Julian, trois étudiants de deuxième année en BUT MMI (Multimédia et
+                    Internet). Ce site nous permet de présenter notre projet de datalogie pour SAE 3.03. Elle reprend le poster que nous avons réalisé. <br><br> Nous avons choisi, afin d'illustrer la couche d'ozone, un parapluie qui serait troué, et dont chaque représenterait le trou de la couche d'ozone au fil du temps. Notre choix s'est porté sur un parapluie car ce dernier, tout comme la couche d'ozone, sert à nous protéger de ce qui vient du ciel et se trouve au-dessus de nos têtes.
+</p>
+            </div>
+            <img src="img/Rasschaert-Moenner-Brun-2A1.png" alt="Projet" class="projet">
+        </div>
+    </section>
+
+<br><br><br><br><br><br><br>
+
+    <section id="about">
+ <h1>Contexte</h1>
+    <p>La couche d’ozone joue un rôle essentiel pour rendre la planète habitable pour nous et d’autres espèces. Haut dans 
+l’atmosphère – entre 10 à 50 kilomètres au-dessus de la surface de la terre – la couche d’ozone absorbe la plupart des 
+rayons ultraviolets du soleil. Mais, au cours des années 1970, 80 et 90, les humains émettaient de grandes quantités de 
+substances qui ont dégradé la couche d’ozone. Cela a conduit à la création de trous d’ozone aux pôles de la terre, exposant 
+la vie à des niveaux plus élevés de rayonnement ultraviolet et augmentant les risques de cancer de la peau chez l’homme.</p> <br><br><br>
+
+        <h1>Quelques chiffres</h1> <br><br>
+<h2>Évolution des substances qui réduisent la couche d'ozone dans le monde de 1988 à 2020</h2>
+        <div class="Graph1">
+            <canvas id="chart"></canvas>
+        </div>
+        <p>Ce graphique represente les principales substances qui réduisent la couche d'ozone dans le monde de 1988 à 2020. <br> Les émissions de chaque gaz sont exprimées en tonnes de potentiel d'appauvrissement de l'ozone (PAO), ce qui tient compte de
+la quantité de gaz émise et de sa « puissance » en termes d'appauvrissement de la couche d'ozone. <br><br> Les données proviennent du site <a href="https://ourworldindata.org/ozone-layer" class="link">ourworldindata</a></p>
+<br><br><br><br>
+
+        <h2>Évolution de la taille du trou dans la couche d'ozone au-dessus de l'Antarctique de 1979 à 2024</h2>
+        <div class="Graph2">
+            <canvas id="trou"></canvas>
+        </div>
+        <p>Ce graphique represente la taille du trou dans la couche d'ozone au-dessus de l'Antarctique. <br> Superficie moyenne du trou dans la couche d'ozone stratosphérique au cours du temps, exprimée en km². <br><br>Les données proviennent du site <a href="https://ourworldindata.org/ozone-layer" class="link">ourworldindata</a></p>
+    </section>
+
+   
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Nous Contacter</h3>
+                <p><strong>Email:</strong> sae3.03@example.com</p>
+                <p><strong>Téléphone:</strong> +33 1 23 45 67 89</p>
+                <p><strong>Adresse:</strong> IUT de Lannion, 22300 Cote d'armor</p>
+            </div>
+            <div class="footer-section">
+                <h3>L'équipe</h3>
+                <ul>
+                    <li>Stella</li>
+                    <li>Quentin</li>
+                    <li>Julian</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <ul>
+                    <li><a href="#">ENT Rennes 1</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SAE 3.03 - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+<script src="./pointjs.js"></script>
+
+</html>
